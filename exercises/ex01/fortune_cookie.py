@@ -25,6 +25,6 @@ else:
             print("You are far greater than you can even imagine.")
         else:
             if a == 4:
-                print("Love yourself as you would want others to love you.")
+                print("Love yourself as you would want others to love you!")
  
 
