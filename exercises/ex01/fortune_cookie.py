@@ -13,10 +13,10 @@ from random import randint
 
 
 # Begin your solution here...
-print("Hello! Your fourtune cookie says... ")
+print("Hello! Your fortune cookie says... ")
 a: int = randint(1,4)
 if a == 1:
-    print( "Life is nothing without frienship!")
+    print( "Life is nothing without friendship!")
 else: 
     if a == 2:
         print("Good things happen to people who care.")
@@ -26,5 +26,6 @@ else:
         else:
             if a == 4:
                 print("Love yourself as you would want others to love you!")
+print("Now go fourth and live an amazing life!")
  
 

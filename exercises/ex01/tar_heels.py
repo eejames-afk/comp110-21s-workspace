@@ -4,16 +4,16 @@ __author__ = "730273306"
 
 
 # Begin your solution here...
-b :int = print(input("Please, enter an int: "))
-c :float = b%
-if c == 2:
-    print("Tar")
+b: int = int(input("Please, enter an int: "))
+c: bool = (b%2 == 0)
+d: bool = (b%7 == 0)
+if c and d:   
+    print("Tar Heels!")
 else: 
-    if c == 7:
+    if d:
         print("Heels!")
     else:
-        if c == 2 and 7:
-            print("Tar Heels!")
+        if c:
+            print("Tar")
         else: 
-            if c != 2 or 7:
-                print("Carolina")
+             print("Carolina")
