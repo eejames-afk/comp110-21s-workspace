@@ -18,5 +18,20 @@ from datetime import timedelta
 
 
 # Begin your solution here...
-Print("Please input the correct information for best accuracy!")
-Pop: int: int(input("Population: "))
+print("Please input the correct information for best accuracy!")
+""" My variable"""
+Pop: int = int(input("Population: "))
+dose_Admin: int = int(input("Doses administered: "))
+dose_Per_Day: int = int(input("Does per day: "))
+target: int = int(input("Target percent vaccinated: "))
+if target > 100: 
+    print("Unable to compute :/")
+else:
+    Total_doses: int = (Pop * 2)
+    Target_number: int = round(Total_doses* target/ 100)
+    Days_needed: int = round((Target_number-dose_Admin)/dose_Per_Day)
+    today: datetime = datetime.today()
+    One_Day: timedelta = timedelta(Days_needed)
+    future: datetime = today + One_Day 
+    Final_day: str = future.strftime("%B %d, %y")
+    print("We will reach " + str(target) + "%" +" vaccincation in " + str(Days_needed) + " days, which falls on " + Final_day + ".")
